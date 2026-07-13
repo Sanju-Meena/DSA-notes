@@ -1,8 +1,6 @@
 // read summery and for code purpose going to file no. 001
 
 
-#include<bits/stdc++.h>
-using namespace std;
 /*  ***Graph**
 defin: Graph is a type of non-linear data structure which is a combination of nodes and edges;
 Type of graph:
@@ -32,20 +30,26 @@ in directed graph atleast two node require two make cyclic graph, while in undir
 
 **For graph representation we have two method;
 #1 Adjacency Matrix: It is a square VxV square matrix used to represent a graph.
-   The cell matrix[i][j] stores information about the edge between vertex i and vertex j.
-   For unweighted graphs: matrix[i][j] = 1 if an edge exists, otherwise 0.
+The cell matrix[i][j] stores information about the edge between vertex i and vertex j.
+For unweighted graphs: matrix[i][j] = 1 if an edge exists, otherwise 0.
    For weighted graphs: matrix[i][j] = weight if an edge exists, and 0 or infinity if it doesn't.
    Space Complexity: O(n^2) This is because it always uses a V x V matrix.
    Time Complexity: O(1), You just look up matrix[i][j].
-
-#2: Adjacency List: A list represents a graph as an array of lists.The index i correspond to vertex i,
+   
+   #2: Adjacency List: A list represents a graph as an array of lists.The index i correspond to vertex i,
     and the list at that index stores all the vertices that i is connected to.
     Example: If A is connected to B and C, the list for A would be [B, C].
     Space Complexity: O(V + E) This is because you store one entry for each vertex (V) and one entry for each edge (E).
     Time Complexity :Check for edge (i, j): O(k), K is the number of neighbors of vertex i.In the worst case, this is O(V).
+    
+    */
+   #include<iostream>
+   #include<map>
+   #include<list>
+   #include<vector>
+   #include<unordered_map>
+   using namespace std;
    
-*/
- 
 template<typename T> 
 class graph{
     public:
